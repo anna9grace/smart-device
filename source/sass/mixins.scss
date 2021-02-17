@@ -4,10 +4,9 @@
   padding: 0;
 }
 
-@mixin font-sizes($fsize: 16px, $lheight: 28px, $fweight: 400) {
+@mixin font-sizes($fsize: 16px, $lheight: 28px) {
   font-size: $fsize;
   line-height: $lheight;
-  font-weight: $fweight;
 }
 
 @mixin sizes($width: 60px, $height: 60px) {
