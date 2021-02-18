@@ -9,11 +9,20 @@
     width: 73.7%;
     max-width: 1422px;
   }
+
+  &--promo {
+    width: 74%;
+    max-width: 1420px;
+  }
 }
 
 @media (max-width: $max-tablet-width) {
   .container {
     width: 93.3%;
+
+    &--promo {
+      width: 77.3%;
+    }
   }
 }
 

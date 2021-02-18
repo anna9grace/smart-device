@@ -29,6 +29,7 @@
   align-items: center;
   color: $main-color-light;
   margin: 10px 0 10px 86px;
+  border-color: $main-color-light;
 
   &:hover,
   &:focus {
@@ -47,7 +48,7 @@
 }
 
 .page-header__contacts a:last-of-type {
-  padding: 13px 29px 14px;
+  padding: 13px 30px 14px;
   margin-right: 2px;
   margin-left: 46px;
 }

@@ -40,29 +40,27 @@
   <main>
 
     <section class="promo">
-      <div class="promo__wrapper container">
+      <div class="promo__wrapper container container--promo">
         <div class="promo__info">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="btn" href="#contact-form">Получить бесплатную консультацию</a>
-          <a class="promo__scroll-btn" href="#features">Скролл вниз</a>
+          <a class="btn btn--promo" href="#contact-form">
+            <span>Получить бесплатную консультацию</span>
+            <span>Бесплатная консультация</span>
+          </a>
+          <a href="#features">Скролл вниз</a>
         </div>
-        <div class="promo__picture">
-          <picture>
-            <!-- 1х: 294x220px; 2x: 588x440px -->
-            <source type="image/webp" media="(max-width:767px)"
-              srcset="img/main-bg-picture-mobile.webp 1x, img/main-bg-picture-mobile-2x.webp 2x">
-            <!-- 1х: 260x340px; 2x: 520x680px -->
-            <source type="image/webp" media="(max-width:1023px)"
-              srcset="img/main-bg-picture-tablet.webp 1x, img/main-bg-picture-tablet-2x.webp 2x">
-            <!-- 1х: 705x515px; 2x: 1410x1030px -->
-            <source type="image/webp"
+        <picture>
+          <!-- 1х: 294x220px; 2x: 588x440px -->
+          <source type="image/webp" media="(max-width:767px)"
+            srcset="img/main-bg-picture-mobile.webp 1x, img/main-bg-picture-mobile-2x.webp 2x">
+          <!-- 1х: 705x515px; 2x: 1410x1030px -->
+          <source type="image/webp"
               srcset="img/main-bg-picture.webp 1x, img/main-bg-picture-2x.webp 2x">
-            <!-- 1х: 705x515px; 2x: 1410x1030px -->
-            <img src="img/main-bg-picture.jpg" alt="Печатные платы" width="705" height="515"
-              srcset="img/main-bg-picture-2x.jpg 2x">
-          </picture>
-        </div>
+          <!-- 1х: 705x515px; 2x: 1410x1030px -->
+          <img src="img/main-bg-picture.png" alt="Печатные платы" width="705" height="515"
+            srcset="img/main-bg-picture-2x.png 2x">
+        </picture>
       </div>
     </section>
 
@@ -177,7 +175,7 @@
       </div>
     </section>
 
-    <section class="question-form">
+    <section class="question-form" id="contact-form">
       <div class="question__wrapper container">
         <form class="question-form__form form" action="https://echo.htmlacademy.ru" method="post">
           <h2>Остались вопросы? Задайте их нам!</h2>
@@ -239,15 +237,17 @@
 
       <div class="page-footer__navigation">
         <h3>Разделы сайта</h3>
-        <ul hidden>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Продукты</a></li>
-          <li><a href="#">Производство печатных плат</a></li>
-          <li><a href="#">Монтаж печатных плат</a></li>
-          <li><a href="#">Комплектующие</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <div>
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Продукты</a></li>
+            <li><a href="#">Производство печатных плат</a></li>
+            <li><a href="#">Монтаж печатных плат</a></li>
+            <li><a href="#">Комплектующие</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="page-footer__contacts">
@@ -299,5 +299,6 @@
     </div>
   </div>
 
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,10 +1,46 @@
 .btn {
   @include font-sizes(14px, 16px);
-  font-weight: 700;
   font-family: $secondary-font-family;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: -0.7px;
+  letter-spacing: 0.5px;
   border-radius: 5px;
-  border: 1px solid $main-color-light;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+
+  &--promo {
+    @include font-sizes(16px, 19px);
+    color: $main-color-light;
+    background-color: $accent-color;
+
+    span:last-of-type {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: transparentize($main-color-light, 0.8);
+      color: $accent-color;
+      // border: none;
+    }
+
+    &:active {
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .btn {
+    &--promo {
+      span:first-of-type {
+        display: none;
+      }
+
+      span:last-of-type {
+        display: initial;
+      }
+    }
+  }
 }

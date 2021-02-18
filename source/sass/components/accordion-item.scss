@@ -1,0 +1,36 @@
+.accordion {
+  h3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+
+    &::before {
+      @include sizes(16px, 1px);
+      content: "";
+      position: absolute;
+      right: 17px;
+      border-bottom: 1px solid transparentize($border-color, 0.8);
+    }
+
+    &::after {
+      @include sizes(1px, 16px);
+      position: absolute;
+      right: 25px;
+      border-right: 1px solid transparentize($border-color, 0.8);
+    }
+  }
+}
+
+.accordion--closed {
+  h3::after {
+    content: "";
+  }
+}
+
+.accordion--closed > div {
+  display: none;
+}

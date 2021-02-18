@@ -1,3 +1,156 @@
-.promo__picture {
-  width: 50%;
+.promo {
+  @include font-sizes(22px, 34px);
+  padding: 7.2% 0 3% 0;
+  color: $main-color-light;
+  overflow: hidden;
+
+  h1 {
+    @include font-sizes(80px, 94px);
+    margin-top: 57px;
+    margin-bottom: 5px;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+}
+
+.promo__info {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+  min-width: 550px;
+
+  p {
+    position: relative;
+    padding-left: 96px;
+    margin-bottom: 44px;
+
+    &::before {
+      @include sizes(66px, 2px);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 16px;
+      background-color: $main-color-light;
+    }
+  }
+
+  a:not(:last-of-type) {
+    margin-left: 96px;
+    margin-bottom: 23%;
+    padding: 17px 49px;
+    align-self: flex-start;
+  }
+
+  a:last-of-type {
+    @include font-sizes(14px, 16px);
+    align-self: flex-start;
+    color: transparentize($main-color-light, 0.5);
+    transform: rotate(-90deg);
+    transform-origin: left top;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: $accent-color;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+.promo img {
+  position: absolute;
+  right: 9.3%;
+  width: 36.5%;
+  z-index: -1;
+}
+
+@media (max-width: $max-tablet-width) {
+  .promo {
+    @include font-sizes(18px, 28px);
+    padding-top: 5.2%;
+    padding-bottom: 8.2%;
+
+    h1 {
+      @include font-sizes(60px, 70px);
+      margin-bottom: 12px;
+    }
+  }
+
+  .promo__info {
+    width: 433px;
+    min-width: auto;
+
+    p {
+      padding-left: 52px;
+      margin-bottom: 53px;
+
+      &::before {
+        width: 33px;
+        right: 4px;
+      }
+    }
+
+    a:not(:last-of-type) {
+      width: 380px;
+      margin-left: 52px;
+      padding-left: 25px;
+      padding-right: 25px;
+      letter-spacing: 0.8px;
+    }
+
+    a:last-of-type {
+      display: none;
+    }
+  }
+
+  .promo img {
+    width: auto;
+    height: 340px;
+    left: 66%;
+    top: 11.3%;
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .promo {
+    @include font-sizes(16px, 25px);
+    padding-top: 48.9%;
+
+    h1 {
+      @include font-sizes(40px, 47px);
+      max-width: 264px;
+    }
+  }
+
+  .promo__info {
+    width: 100%;
+
+    p {
+      margin-bottom: 39px;
+    }
+
+    a:not(:last-of-type) {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10%;
+    }
+  }
+
+  .promo img {
+    height: auto;
+    width: 92%;
+    left: 7.9%;
+    top: 9.2%;
+  }
 }
