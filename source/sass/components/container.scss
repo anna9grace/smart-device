@@ -4,7 +4,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  &--header {
+  &--header,
+  &--footer {
     width: 73.7%;
     max-width: 1422px;
   }
@@ -19,5 +20,9 @@
 @media (max-width: $max-mobile-width) {
   .container {
     width: 90.63%;
+
+    &--footer {
+      width: 100%;
+    }
   }
 }
