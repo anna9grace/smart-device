@@ -1,0 +1,90 @@
+.about {
+  @include font-sizes(16px, 22px);
+  display: flex;
+  color: $main-color-dark;
+
+  h2 {
+    @include font-sizes(36px, 51px);
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: $secondary-font-family;
+    font-weight: 400;
+  }
+}
+
+.about__year {
+  align-self: flex-start;
+  transform: rotate(-90deg) translate(-27%, -65%);
+  transform-origin: center center;
+
+  p {
+    @include font-sizes(157px, 157px);
+    display: inline-block;
+    margin: 0;
+    color: transparent;
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    background: $accent-color url("../../img/bg-year.jpg");
+    background-clip: text;
+  }
+}
+
+.about__wrapper {
+  margin-left: -140px;
+
+  a {
+    min-width: 180px;
+    margin-top: 24px;
+    padding: 14px 19px 12px 19px;
+  }
+}
+
+
+@media (max-width: $max-tablet-width) {
+  .about {
+    h2 {
+      @include font-sizes(32px, 45px);
+    }
+  }
+
+  .about__year {
+    transform: rotate(-90deg) translate(-24%, -62%);
+
+    p {
+      @include font-sizes(179px, 179px);
+    }
+  }
+
+  .about__wrapper {
+    margin-left: -175px;
+
+    a {
+      margin-top: 28px;
+    }
+  }
+}
+
+
+@media (max-width: $max-mobile-width) {
+  .about {
+    h2 {
+      @include font-sizes(28px, 39px);
+    }
+  }
+
+  .about__year {
+    display: none;
+  }
+
+  .about__wrapper {
+    margin-left: 0;
+
+    p:not(:last-of-type) {
+      margin-bottom: 38px;
+    }
+
+    a {
+      margin-top: 14px;
+    }
+  }
+}

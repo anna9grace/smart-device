@@ -34,7 +34,6 @@
     }
   };
 
-
   if (mobileScreen.matches) {
     turnOnAccordion();
   }

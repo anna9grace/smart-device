@@ -13,7 +13,7 @@ var imagemin = require(`gulp-imagemin`);
 var webp = require(`gulp-webp`);
 var svgstore = require(`gulp-svgstore`);
 var del = require(`del`);
-var rigger = require(`gulp-rigger`);
+var concat = require(`gulp-concat`);
 
 gulp.task(`css`, function () {
   return gulp.src(`source/sass/style.scss`)
@@ -82,7 +82,7 @@ gulp.task(`html`, function () {
 gulp.task(`scripts`, function () {
   return gulp.src(`source/js/**/*.js`)
       .pipe(plumber())
-      .pipe(rigger())
+      .pipe(concat(`main.js`))
       .pipe(gulp.dest(`build/js`));
 });
 

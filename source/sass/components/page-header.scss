@@ -22,15 +22,21 @@
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 86px;
+    color: $main-color-light;
+    border-color: $main-color-light;
+
+    svg {
+      color: $accent-color;
+    }
+  }
 }
 
-.page-header__contacts a {
-  display: flex;
-  align-items: center;
-  margin: 10px 0 10px 86px;
-  color: $main-color-light;
-  border-color: $main-color-light;
-
+.page-header__contacts a:not(:last-of-type) {
   &:hover,
   &:focus {
     color: $accent-color;
@@ -40,10 +46,6 @@
 
   &:active {
     opacity: 0.7;
-  }
-
-  svg {
-    color: $accent-color;
   }
 }
 

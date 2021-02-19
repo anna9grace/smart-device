@@ -1,5 +1,6 @@
 .btn {
   @include font-sizes(14px, 16px);
+  display: inline-block;
   text-align: center;
   color: $accent-color;
   font-family: $secondary-font-family;
@@ -8,6 +9,17 @@
   letter-spacing: 0.5px;
   border-radius: 5px;
   border: 1px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color-light;
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 
   &--promo {
     @include font-sizes(16px, 19px);
@@ -22,7 +34,6 @@
     &:focus {
       color: $accent-color;
       background-color: transparentize($main-color-light, 0.8);
-      // border: none;
     }
 
     &:active {
