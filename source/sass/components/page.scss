@@ -20,3 +20,24 @@
 .page footer {
   flex-shrink: 0;
 }
+
+.page__inner-wrapper {
+  background: $main-color-light url("../../img/bg-light.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+@media (max-width: $max-tablet-width) {
+  .page__inner-wrapper {
+    padding-top: 54px;
+    padding-bottom: 83px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .page__inner-wrapper {
+    padding-top: 37px;
+    // padding-bottom: 83px;
+  }
+}

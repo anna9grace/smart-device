@@ -1,7 +1,7 @@
 .page-footer {
-  background-color: $background-color-light;
-  padding-top: 44px;
   position: relative;
+  padding-top: 44px;
+  background-color: $background-color-light;
 }
 
 .page-footer__wrapper {
@@ -13,11 +13,11 @@
 
   h3 {
     margin-left: 4px;
+    color: $background-color-dark;
     font-family: $secondary-font-family;
     font-weight: 400;
     letter-spacing: -0.9px;
     text-transform: uppercase;
-    color: $background-color-dark;
   }
 
   ul {
@@ -61,8 +61,8 @@
 }
 
 .page-footer__navigation {
-  margin-right: 4.5%;
   width: 43.3%;
+  margin-right: 4.5%;
   margin-left: auto;
   padding-left: 20px;
 
@@ -140,8 +140,8 @@
     width: 35%;
 
     ul {
-      columns: 1 234px;
       margin-right: auto;
+      columns: 1 234px;
     }
   }
 }
@@ -155,9 +155,9 @@
   .page-footer__socials {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     flex-basis: 100%;
+    align-items: center;
 
 
     &::after {
@@ -263,8 +263,8 @@
 
   .page-footer__navigation ul,
   .page-footer__contacts div {
-    padding: 6px 4.7% 25px 4.7%;
     margin-right: 10px;
+    padding: 6px 4.7% 25px 4.7%;
   }
 
   .page-footer__copyright {

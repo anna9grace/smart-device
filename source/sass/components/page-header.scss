@@ -27,8 +27,8 @@
 .page-header__contacts a {
   display: flex;
   align-items: center;
-  color: $main-color-light;
   margin: 10px 0 10px 86px;
+  color: $main-color-light;
   border-color: $main-color-light;
 
   &:hover,
@@ -48,9 +48,9 @@
 }
 
 .page-header__contacts a:last-of-type {
-  padding: 13px 30px 14px;
   margin-right: 2px;
   margin-left: 46px;
+  padding: 13px 30px 14px;
 }
 
 .page-header__contacts span {
@@ -73,8 +73,8 @@
   }
 
   .page-header__contacts a {
-    color: $accent-color;
     margin-left: 20px;
+    color: $accent-color;
 
     &:hover,
     &:focus {
