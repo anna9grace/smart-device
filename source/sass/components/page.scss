@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-.page body {
+.page__body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -10,6 +10,10 @@
 
   @media (min-resolution: 2dppx) {
     background: $background-color-dark url("../../img/bg-main-2x.jpg") top center;
+  }
+
+  &--inactive {
+    overflow: hidden;
   }
 }
 

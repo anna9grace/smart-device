@@ -12,7 +12,7 @@
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
 </head>
-<body>
+<body class="page__body">
 
   <header class="page-header">
     <div class="page-header__wrapper container container--header">
@@ -37,7 +37,7 @@
             +7 (495) 000 52 52
           </span>
         </a>
-        <a class="btn" href="#">Заказать звонок</a>
+        <a class="page-header__modal-btn btn" href="#">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -192,7 +192,7 @@
             <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
             <input class="form__field" type="text" name="name" id="customer-name" placeholder="Имя" required>
             <label class="visually-hidden" for="customer-phone">Укажите Ваш телефон</label>
-            <input class="form__field" type="tel" name="phone" id="customer-phone"  pattern="[0-9]{10}" placeholder="Телефон" required>
+            <input class="form__field" type="tel" name="phone" id="customer-phone" pattern="[\+]{1}[7]{1}[\(][0-9]{3}[\)][0-9]{7}" placeholder="Телефон" required>
             <label class="visually-hidden" for="customer-question">Задайте Ваш вопрос</label>
             <textarea class="form__field" name="question" id="customer-question" placeholder="Ваш вопрос" rows="4" required></textarea>
             <button class="form__btn btn btn--form" type="submit">Задать вопрос</button>
@@ -282,7 +282,7 @@
   </footer>
 
 
-  <div class="modal">
+  <div class="modal hidden">
     <div class="modal__wrapper">
       <button class="modal__close-btn">
         <span class="visually-hidden">Закрыть</span>

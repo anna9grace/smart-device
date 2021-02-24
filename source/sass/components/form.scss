@@ -29,6 +29,7 @@
     border: none;
 
     &::placeholder {
+      color: $main-color-light;
       opacity: 1;
     }
 
