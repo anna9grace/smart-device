@@ -489,9 +489,282 @@ html {
     .about__wrapper a {
       margin-top: 14px; } }
 
-.products__link {
-  display: block;
-  width: 300px; }
+.products {
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  color: #ffffff;
+  background-color: #1b2d37; }
+
+.products__wrapper {
+  padding-top: 60px;
+  padding-bottom: 79px; }
+  .products__wrapper h2 {
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 52px;
+    font-weight: 400; }
+  .products__wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: -3%; }
+
+.products__card {
+  -ms-flex-preferred-size: 30.5%;
+      flex-basis: 30.5%;
+  height: 32.3vw;
+  margin-right: 2.8%;
+  margin-bottom: 46px;
+  overflow: hidden; }
+  .products__card a {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    padding-left: 43px; }
+    .products__card a::before {
+      width: 63px;
+      height: 63px;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #00b2ff;
+      z-index: 1; }
+    .products__card a::after {
+      width: 6px;
+      height: 6px;
+      content: "";
+      position: absolute;
+      bottom: 29px;
+      right: 27px;
+      border-right: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      z-index: 1; }
+    .products__card a span {
+      position: relative;
+      display: block;
+      width: 173px;
+      z-index: 1; }
+    .products__card a img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      min-height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      opacity: 0.2; }
+    .products__card a:hover, .products__card a:focus {
+      outline: none; }
+      .products__card a:hover img, .products__card a:focus img {
+        opacity: 1; }
+      .products__card a:hover::before, .products__card a:focus::before {
+        opacity: 0.7; }
+    .products__card a:active {
+      opacity: 0.6; }
+
+@media (max-width: 1023px) {
+  .products__wrapper {
+    padding-top: 26px;
+    padding-bottom: 32px; }
+    .products__wrapper h2 {
+      font-size: 32px;
+      line-height: 45px;
+      margin-bottom: 47px; }
+    .products__wrapper ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-right: 0; }
+  .products__card {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    height: 33.3vw;
+    margin-right: 0; }
+    .products__card a {
+      padding-top: 42px; } }
+
+@media (max-width: 767px) {
+  .products__wrapper h2 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-left: 10px;
+    margin-bottom: 43px; }
+  .products__card {
+    height: 80vw;
+    margin-bottom: 30px; }
+    .products__card a {
+      padding-top: 21px;
+      padding-left: 36px; } }
+
+.question-form {
+  padding-top: 62px;
+  padding-bottom: 112px;
+  background: #00b2ff url("../../img/bg-form.jpg") center center no-repeat; }
+  .question-form h2 {
+    font-size: 36px;
+    line-height: 51px; }
+
+.question-form__form {
+  width: 48.8%;
+  min-width: 470px;
+  margin-left: auto; }
+
+.question-form__container {
+  position: relative; }
+  .question-form__container::before {
+    width: 43.5%;
+    height: 288px;
+    content: "";
+    position: absolute;
+    left: -2%;
+    top: 14.5%;
+    background: url("../../img/bg-airplane.png") center center no-repeat;
+    background-size: contain; }
+
+.question-form__wrapper {
+  margin-top: 51px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .question-form__wrapper input {
+    -ms-flex-preferred-size: 47.4%;
+        flex-basis: 47.4%;
+    margin-bottom: 40px; }
+  .question-form__wrapper textarea {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 43px; }
+  .question-form__wrapper button {
+    -ms-flex-preferred-size: 47.6%;
+        flex-basis: 47.6%; }
+  .question-form__wrapper p {
+    -ms-flex-preferred-size: 45.7%;
+        flex-basis: 45.7%; }
+
+@media (max-width: 1400px) {
+  .question-form__container::before {
+    left: -50px; } }
+
+@media (max-width: 1023px) {
+  .question-form h2 {
+    font-size: 32px;
+    line-height: 45px; } }
+
+@media (max-width: 767px) {
+  .question-form h2 {
+    font-size: 28px;
+    line-height: 39px; } }
+
+.form {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff; }
+  .form h2 {
+    margin-bottom: 10px;
+    font-family: "Roboto Condensed", "Arial", "sans-serif";
+    font-weight: 400; }
+  .form p {
+    margin: 0; }
+
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form__wrapper button {
+    height: 45px;
+    padding: 5px 15px; }
+  .form__wrapper input,
+  .form__wrapper textarea {
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none; }
+    .form__wrapper input::-webkit-input-placeholder,
+    .form__wrapper textarea::-webkit-input-placeholder {
+      opacity: 1; }
+    .form__wrapper input::-moz-placeholder,
+    .form__wrapper textarea::-moz-placeholder {
+      opacity: 1; }
+    .form__wrapper input:-ms-input-placeholder,
+    .form__wrapper textarea:-ms-input-placeholder {
+      opacity: 1; }
+    .form__wrapper input::-ms-input-placeholder,
+    .form__wrapper textarea::-ms-input-placeholder {
+      opacity: 1; }
+    .form__wrapper input::placeholder,
+    .form__wrapper textarea::placeholder {
+      opacity: 1; }
+    .form__wrapper input:hover, .form__wrapper input:focus,
+    .form__wrapper textarea:hover,
+    .form__wrapper textarea:focus {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.3); }
+    .form__wrapper input:focus,
+    .form__wrapper textarea:focus {
+      -webkit-box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.6);
+              box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.6); }
+  .form__wrapper textarea {
+    padding: 13px 17px;
+    resize: none; }
+  .form__wrapper input {
+    height: 50px;
+    padding: 0 17px 5px 17px; }
+  .form__wrapper input[type="checkbox"] {
+    display: none; }
+  .form__wrapper input[type="checkbox"] + label {
+    font-size: 14px;
+    line-height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    padding-left: 32px; }
+    .form__wrapper input[type="checkbox"] + label::before {
+      width: 16px;
+      height: 16px;
+      content: "";
+      position: absolute;
+      left: 0;
+      border: 1px solid #ffffff; }
+    .form__wrapper input[type="checkbox"] + label:hover, .form__wrapper input[type="checkbox"] + label:focus {
+      outline: none; }
+      .form__wrapper input[type="checkbox"] + label:hover::before, .form__wrapper input[type="checkbox"] + label:focus::before {
+        background-color: rgba(255, 255, 255, 0.3); }
+  .form__wrapper input[type="checkbox"]:checked + label::after {
+    width: 7px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.modal h2 {
+  font-size: 28px;
+  line-height: 39px; }
+
+.modal__wrapper {
+  background-color: #00b2ff; }
 
 .page-footer {
   position: relative;
@@ -796,11 +1069,13 @@ html {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-radius: 5px;
-  border: 1px solid #00b2ff; }
+  border: 1px solid #00b2ff;
+  background: none; }
   .btn:hover, .btn:focus {
     color: #ffffff;
     background-color: #00b2ff;
-    border-color: #00b2ff; }
+    border-color: #00b2ff;
+    outline: none; }
   .btn:active {
     opacity: 0.8; }
   .btn--promo {
@@ -813,8 +1088,12 @@ html {
     .btn--promo:hover, .btn--promo:focus {
       color: #00b2ff;
       background-color: rgba(255, 255, 255, 0.2); }
-    .btn--promo:active {
-      opacity: 0.9; }
+  .btn--form {
+    color: #ffffff;
+    border: 1px solid #ffffff; }
+    .btn--form:hover, .btn--form:focus {
+      color: #00b2ff;
+      background-color: #ffffff; }
 
 @media (max-width: 767px) {
   .btn--promo span:first-of-type {

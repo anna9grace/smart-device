@@ -10,6 +10,10 @@
   @include sizes(202px, 52px);
   display: flex;
 
+  img {
+    width: auto;
+  }
+
   img:last-of-type {
     margin-left: 16px;
     margin-top: 5px;

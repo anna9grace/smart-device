@@ -1,0 +1,110 @@
+.form {
+  @include font-sizes(16px, 22px);
+  color: $main-color-light;
+
+  h2 {
+    font-family: $secondary-font-family;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  button {
+    height: 45px;
+    padding: 5px 15px;
+  }
+
+  input,
+  textarea {
+    color: inherit;
+    background-color: transparentize($main-color-light, 0.9);
+    border: none;
+
+    &::placeholder {
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: transparentize($main-color-light, 0.7);
+    }
+
+    &:focus {
+      box-shadow: 0 0 1px 2px transparentize($main-color-light, 0.4);
+    }
+  }
+
+  textarea {
+    padding: 13px 17px 18px 17px;
+    resize: none;
+  }
+
+  input {
+    height: 50px;
+    padding: 0 17px 5px 17px;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label {
+    @include font-sizes(14px, 16px);
+    display: flex;
+    margin-top: 8px;
+    color: transparentize($main-color-light, 0.2);
+    position: relative;
+    padding-left: 32px;
+
+    &::before {
+      @include sizes(16px, 16px);
+      content: "";
+      position: absolute;
+      left: 0;
+      border: 1px solid $main-color-light;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      &::before {
+        background-color: transparentize($main-color-light, 0.7);
+      }
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    &::after {
+      @include sizes(7px, 5px);
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 4px;
+      border-left: 1px solid $main-color-light;
+      border-bottom: 1px solid $main-color-light;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+@media (max-width: $max-tablet-width) {
+  .form__wrapper {
+    textarea {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+
+// Сделать валидацию формы телефона при помощи маски.При фокусе в поле ввода появляется "+7(", при вводе данных появляется закрывающая скобка. В поле можно ввести только 10 цифр (мобильный телефон)

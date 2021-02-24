@@ -9,12 +9,14 @@
   letter-spacing: 0.5px;
   border-radius: 5px;
   border: 1px solid $accent-color;
+  background: none;
 
   &:hover,
   &:focus {
     color: $main-color-light;
     background-color: $accent-color;
     border-color: $accent-color;
+    outline: none;
   }
 
   &:active {
@@ -35,9 +37,16 @@
       color: $accent-color;
       background-color: transparentize($main-color-light, 0.8);
     }
+  }
 
-    &:active {
-      opacity: 0.9;
+  &--form {
+    color: $main-color-light;
+    border: 1px solid $main-color-light;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: $main-color-light;
     }
   }
 }

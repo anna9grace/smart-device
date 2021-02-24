@@ -1,6 +1,6 @@
 .page-footer {
   position: relative;
-  padding-top: 44px;
+  padding-top: 46px;
   background-color: $background-color-light;
 }
 
@@ -53,6 +53,10 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 56px;
+
+  img {
+    width: auto;
+  }
 
   img:last-of-type {
     margin-left: 16px;
@@ -189,7 +193,7 @@
   .page-footer__navigation,
   .page-footer__contacts {
     flex-basis: 48%;
-    margin-top: 17px;
+    margin-top: 19px;
 
     h3 {
       margin-left: 0;

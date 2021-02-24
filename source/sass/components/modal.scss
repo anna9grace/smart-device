@@ -1,0 +1,9 @@
+.modal {
+  h2 {
+    @include font-sizes(28px, 39px);
+  }
+}
+
+.modal__wrapper {
+  background-color: $accent-color;
+}

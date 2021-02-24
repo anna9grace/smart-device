@@ -49,7 +49,7 @@
         <div class="promo__info">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="btn btn--promo" href="#contact-form">
+          <a class="btn btn--promo" href="#question-form">
             <span>Получить бесплатную консультацию</span>
             <span>Бесплатная консультация</span>
           </a>
@@ -183,19 +183,19 @@
       </div>
     </section>
 
-    <section class="question-form" id="contact-form">
-      <div class="question__wrapper container">
+    <section class="question-form" id="question-form">
+      <div class="question-form__container container">
         <form class="question-form__form form" action="https://echo.htmlacademy.ru" method="post">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
-          <div class="form__wrapper">
+          <div class="question-form__wrapper form__wrapper">
             <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
-            <input class="form__field" type="text" name="name" id="customer-name" pattern="[0-9]{10}" placeholder="Имя" required>
+            <input class="form__field" type="text" name="name" id="customer-name" placeholder="Имя" required>
             <label class="visually-hidden" for="customer-phone">Укажите Ваш телефон</label>
-            <input class="form__field" type="tel" name="phone" id="customer-phone" placeholder="Телефон" required>
+            <input class="form__field" type="tel" name="phone" id="customer-phone"  pattern="[0-9]{10}" placeholder="Телефон" required>
             <label class="visually-hidden" for="customer-question">Задайте Ваш вопрос</label>
-            <textarea class="form__field" name="question" id="customer-question" placeholder="Ваш вопрос" required></textarea>
-            <button class="form__btn btn" type="submit">Задать вопрос</button>
+            <textarea class="form__field" name="question" id="customer-question" placeholder="Ваш вопрос" rows="4" required></textarea>
+            <button class="form__btn btn btn--form" type="submit">Задать вопрос</button>
             <p class="form__personal-data">
               <input type="checkbox" id="data-agreement" name="data-agreement" checked>
               <label for="data-agreement">Я согласен на обработку персональных данных</label>
@@ -292,12 +292,12 @@
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="form__wrapper">
           <label class="visually-hidden" for="modal-name">Введите Ваше имя</label>
-          <input class="form__field" type="text" name="name" id="modal-name" pattern="[0-9]{10}" placeholder="Имя" required>
+          <input class="form__field" type="text" name="name" id="modal-name" placeholder="Имя" required>
           <label class="visually-hidden" for="modal-phone">Укажите Ваш телефон</label>
-          <input class="form__field" type="tel" name="phone" id="modal-phone" placeholder="Телефон" required>
+          <input class="form__field" type="tel" name="phone" id="modal-phone" pattern="[0-9]{10}" placeholder="Телефон" required>
           <label class="visually-hidden" for="modal-question">Задайте Ваш вопрос</label>
-          <textarea class="form__field" name="question" id="modal-question" placeholder="Ваш вопрос" required></textarea>
-          <button class="form__btn btn" type="submit">Отправить</button>
+          <textarea class="form__field" name="question" id="modal-question" placeholder="Ваш вопрос" rows="4" required></textarea>
+          <button class="form__btn btn btn--form" type="submit">Отправить</button>
           <p class="form__personal-data">
             <input type="checkbox" id="modal-data-agreement" name="data-agreement" checked>
             <label for="modal-data-agreement">Я согласен на обработку персональных данных</label>
