@@ -3,6 +3,10 @@
   overflow-x: hidden;
 }
 
+.page--inactive {
+  overflow-y: hidden;
+}
+
 .page body {
   display: flex;
   flex-direction: column;

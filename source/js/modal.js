@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  const page = document.querySelector(`body`);
+  const page = document.querySelector(`.page`);
   const loginOpenBtn = document.querySelector(`.page-header__modal-btn`);
   const formModal = document.querySelector(`.modal`);
   const closeBtn = formModal.querySelector(`.modal__close-btn`);
@@ -27,7 +27,7 @@
   const openModal = () => {
     formModal.classList.remove(`hidden`);
     document.addEventListener(`keydown`, escKeyPressHandler);
-    page.classList.add(`page-body--inactive`);
+    page.classList.add(`page--inactive`);
     nameField.focus();
 
     if (storageName) {
@@ -47,7 +47,7 @@
 
   const closeModal = () => {
     formModal.classList.add(`hidden`);
-    page.classList.remove(`page-body--inactive`);
+    page.classList.remove(`page--inactive`);
     document.removeEventListener(`keydown`, escKeyPressHandler);
   };
 

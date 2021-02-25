@@ -70,7 +70,8 @@ html {
       width: 100%; } }
 
 .page {
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 .page body {
   display: -webkit-box;
@@ -158,7 +159,7 @@ html {
 .page-header__contacts a:last-of-type {
   margin-right: 2px;
   margin-left: 46px;
-  padding: 13px 30px 14px; }
+  padding: 13px 27px 14px; }
 
 .page-header__contacts span {
   margin-left: 12px; }
@@ -172,10 +173,10 @@ html {
       width: 36px;
       height: 36px;
       color: inherit; }
-    .page-header__contacts a {
+    .page-header__contacts a:not(:last-of-type) {
       margin-left: 20px;
       color: #00b2ff; }
-      .page-header__contacts a:hover, .page-header__contacts a:focus {
+      .page-header__contacts a:not(:last-of-type):hover, .page-header__contacts a:not(:last-of-type):focus {
         color: #ffffff; }
   .page-header__contacts span,
   .page-header__contacts a:last-of-type {
@@ -189,12 +190,13 @@ html {
     height: 38px; }
     .page-header__logo img:last-of-type {
       display: none; }
-  .page-header__contacts a {
-    margin-left: 12px; } }
+  .page-header__contacts a:not(:last-of-type) {
+    margin-left: 13px; } }
 
 .promo {
   font-size: 22px;
   line-height: 34px;
+  position: relative;
   padding: 7.2% 0 4% 0;
   color: #ffffff;
   overflow: hidden; }
@@ -238,7 +240,7 @@ html {
   .promo__info a:not(:last-of-type) {
     margin-left: 96px;
     margin-bottom: 23%;
-    padding: 17px 49px;
+    padding: 17px 45px;
     -ms-flex-item-align: start;
         align-self: flex-start; }
   .promo__info a:last-of-type {
@@ -295,7 +297,7 @@ html {
     width: auto;
     height: 340px;
     left: 66%;
-    top: 12%; } }
+    top: 3.5%; } }
 
 @media (max-width: 767px) {
   .promo {
@@ -318,8 +320,7 @@ html {
   .promo img {
     height: auto;
     width: 92%;
-    left: 7.9%;
-    top: 9.7%; } }
+    left: 7.9%; } }
 
 .features {
   font-size: 16px;
@@ -435,7 +436,8 @@ html {
             background-clip: text; }
 
 .about__wrapper {
-  margin-left: -140px; }
+  margin-left: -140px;
+  margin-right: 3px; }
   .about__wrapper a {
     min-width: 180px;
     margin-top: 24px;
@@ -452,7 +454,8 @@ html {
       font-size: 179px;
       line-height: 179px; }
   .about__wrapper {
-    margin-left: -175px; }
+    margin-left: -175px;
+    margin-right: 0; }
     .about__wrapper a {
       margin-top: 28px; } }
 
@@ -682,7 +685,7 @@ html {
       margin-bottom: 31px; }
     .question-form__wrapper textarea {
       min-height: auto;
-      margin-bottom: 30px; }
+      margin-bottom: 32px; }
     .question-form__wrapper p {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%; }
@@ -712,7 +715,8 @@ html {
           justify-content: space-between; }
   .form__wrapper button {
     height: 45px;
-    padding: 5px 15px; }
+    padding: 5px 15px;
+    cursor: pointer; }
   .form__wrapper input,
   .form__wrapper textarea {
     color: inherit;
@@ -764,7 +768,8 @@ html {
     display: flex;
     margin-top: 8px;
     color: rgba(255, 255, 255, 0.8);
-    padding-left: 32px; }
+    padding-left: 32px;
+    cursor: pointer; }
     .form__wrapper input[type="checkbox"] + label::before {
       width: 16px;
       height: 16px;
@@ -776,6 +781,8 @@ html {
       outline: none; }
       .form__wrapper input[type="checkbox"] + label:hover::before, .form__wrapper input[type="checkbox"] + label:focus::before {
         background-color: rgba(255, 255, 255, 0.3); }
+    .form__wrapper input[type="checkbox"] + label:active::before {
+      opacity: 0.7; }
   .form__wrapper input[type="checkbox"]:checked + label::after {
     width: 7px;
     height: 5px;
@@ -827,13 +834,14 @@ html {
     margin-right: 20px; }
 
 .modal__wrapper > button {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   position: relative;
   margin-left: auto;
-  margin-right: -19px;
+  margin-right: -21px;
   background-color: transparent;
-  border: none; }
+  border: none;
+  cursor: pointer; }
   .modal__wrapper > button::before, .modal__wrapper > button::after {
     width: 23px;
     height: 1px;
@@ -847,9 +855,11 @@ html {
   .modal__wrapper > button::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  .modal__wrapper > button:hover, .modal__wrapper > button:active {
+  .modal__wrapper > button:hover, .modal__wrapper > button:focus {
     background-color: rgba(255, 255, 255, 0.3);
     outline: none; }
+  .modal__wrapper > button:active {
+    opacity: 0.7; }
 
 .modal__inner-wrapper {
   -webkit-box-orient: vertical;
@@ -894,7 +904,7 @@ html {
 
 .page-footer {
   position: relative;
-  padding-top: 46px;
+  padding-top: 44px;
   background-color: #fafafa; }
 
 .page-footer__wrapper {
@@ -911,6 +921,7 @@ html {
   color: rgba(27, 45, 55, 0.5); }
   .page-footer__wrapper h3 {
     margin-left: 4px;
+    margin-bottom: 20px;
     color: #1b2d37;
     font-family: "Roboto Condensed", "Arial", "sans-serif";
     font-weight: 400;
@@ -1086,7 +1097,7 @@ html {
   .page-footer__contacts {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
-    margin-top: 19px; }
+    margin-top: 17px; }
     .page-footer__navigation h3,
     .page-footer__contacts h3 {
       margin-left: 0; }
@@ -1122,7 +1133,8 @@ html {
     .page-footer__socials::after {
       content: none; }
     .page-footer__socials p {
-      padding: 0; }
+      padding: 0;
+      margin-top: 21px; }
     .page-footer__socials ul {
       margin-top: 12px;
       margin-bottom: 47px; }
@@ -1164,9 +1176,12 @@ html {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  cursor: pointer; }
   .accordion h3:hover {
     background-color: #00b2ff; }
+  .accordion h3:active {
+    opacity: 0.7; }
   .accordion h3::before {
     width: 16px;
     height: 1px;
@@ -1197,7 +1212,7 @@ html {
   font-family: "Roboto Condensed", "Arial", "sans-serif";
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   border-radius: 5px;
   border: 1px solid #00b2ff;
   background: none; }
