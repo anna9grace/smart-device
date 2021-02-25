@@ -33,10 +33,10 @@
     margin: 10px 0 10px 86px;
     color: $main-color-light;
     border-color: $main-color-light;
+  }
 
-    svg {
-      color: $accent-color;
-    }
+  svg {
+    color: $accent-color;
   }
 }
 
@@ -56,7 +56,7 @@
 .page-header__contacts a:last-of-type {
   margin-right: 2px;
   margin-left: 46px;
-  padding: 13px 30px 14px;
+  padding: 13px 27px 14px;
 }
 
 .page-header__contacts span {
@@ -71,26 +71,26 @@
 
   .page-header__contacts {
     margin-right: -6px;
-  }
-
-  .page-header__contacts span,
-  .page-header__contacts a:last-of-type {
-    display: none;
-  }
-
-  .page-header__contacts a {
-    margin-left: 20px;
-    color: $accent-color;
-
-    &:hover,
-    &:focus {
-      color: $main-color-light;
-    }
 
     svg {
       @include sizes(36px, 36px);
       color: inherit;
     }
+
+    a:not(:last-of-type) {
+      margin-left: 20px;
+      color: $accent-color;
+
+      &:hover,
+      &:focus {
+        color: $main-color-light;
+      }
+    }
+  }
+
+  .page-header__contacts span,
+  .page-header__contacts a:last-of-type {
+    display: none;
   }
 }
 
@@ -108,7 +108,7 @@
     }
   }
 
-  .page-header__contacts a {
-    margin-left: 12px;
+  .page-header__contacts a:not(:last-of-type) {
+    margin-left: 13px;
   }
 }

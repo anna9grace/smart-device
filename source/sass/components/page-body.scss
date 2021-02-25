@@ -1,0 +1,24 @@
+.page-body--inactive {
+  overflow: hidden;
+}
+
+.page-body__inner-wrapper {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background: $main-color-light url("../img/bg-light.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: $max-tablet-width) {
+  .page-body__inner-wrapper {
+    padding-top: 54px;
+    padding-bottom: 83px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .page-body__inner-wrapper {
+    padding-top: 37px;
+    padding-bottom: 66px;
+  }
+}

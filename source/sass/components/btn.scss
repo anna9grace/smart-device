@@ -1,12 +1,13 @@
 .btn {
   @include font-sizes(14px, 16px);
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   color: $accent-color;
   font-family: $secondary-font-family;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   border-radius: 5px;
   border: 1px solid $accent-color;
   background: none;

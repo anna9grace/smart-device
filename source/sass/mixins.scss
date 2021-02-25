@@ -9,7 +9,7 @@
   line-height: $lheight;
 }
 
-@mixin sizes($width: 60px, $height: 60px) {
+@mixin sizes($width, $height) {
   width: $width;
   height: $height;
 }

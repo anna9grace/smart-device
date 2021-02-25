@@ -130,7 +130,7 @@
   const openModal = () => {
     formModal.classList.remove(`hidden`);
     document.addEventListener(`keydown`, escKeyPressHandler);
-    page.classList.add(`page__body--inactive`);
+    page.classList.add(`page-body--inactive`);
     nameField.focus();
 
     if (storageName) {
@@ -150,7 +150,7 @@
 
   const closeModal = () => {
     formModal.classList.add(`hidden`);
-    page.classList.remove(`page__body--inactive`);
+    page.classList.remove(`page-body--inactive`);
     document.removeEventListener(`keydown`, escKeyPressHandler);
   };
 

@@ -20,17 +20,19 @@
   p {
     @include font-sizes(157px, 157px);
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
     color: transparent;
     font-family: $secondary-font-family;
     font-weight: 700;
-    background: $accent-color url("../../img/bg-year.jpg");
+    background: $accent-color url("../img/bg-year.jpg");
     background-clip: text;
   }
 }
 
 .about__wrapper {
   margin-left: -140px;
+  margin-right: 3px;
 
   a {
     min-width: 180px;
@@ -57,6 +59,7 @@
 
   .about__wrapper {
     margin-left: -175px;
+    margin-right: 0;
 
     a {
       margin-top: 28px;

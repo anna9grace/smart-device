@@ -8,11 +8,11 @@
   <title>Акселератор, проект Smart Device</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" crossorigin="anonymous">
 </head>
-<body class="page__body">
+<body class="page-body">
 
   <header class="page-header">
     <div class="page-header__wrapper container container--header">
@@ -21,17 +21,17 @@
         <img src="./img/logo-text.svg" alt="Smart Device - умные технологии" width="134" height="45">
       </a>
       <div class="page-header__contacts">
-        <a class="link" href="mailto:info@sd.ru">
+        <a href="mailto:info@sd.ru">
           <svg width="27" height="27" viewBox="-4 -6 27 27">
-            <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            <use xlink:href="./img/sprite_auto.svg#icon-mail"></use>
           </svg>
           <span>
             info@sd.ru
           </span>
         </a>
-        <a class="link" href="tel:84950005252">
+        <a href="tel:84950005252">
           <svg width="27" height="27" viewBox="-5 -4 27 27">
-            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            <use xlink:href="./img/sprite_auto.svg#icon-phone"></use>
           </svg>
           <span>
             +7 (495) 000 52 52
@@ -58,44 +58,44 @@
         <picture>
           <!-- 1х: 294x220px; 2x: 588x440px -->
           <source type="image/webp" media="(max-width:767px)"
-            srcset="img/main-bg-picture-mobile.webp 1x, img/main-bg-picture-mobile-2x.webp 2x">
+            srcset="./img/main-bg-picture-mobile.webp 1x, ./img/main-bg-picture-mobile-2x.webp 2x">
           <!-- 1х: 705x515px; 2x: 1410x1030px -->
           <source type="image/webp"
-              srcset="img/main-bg-picture.webp 1x, img/main-bg-picture-2x.webp 2x">
+              srcset="./img/main-bg-picture.webp 1x, ./img/main-bg-picture-2x.webp 2x">
           <!-- 1х: 705x515px; 2x: 1410x1030px -->
-          <img src="img/main-bg-picture.png" alt="Печатные платы" width="705" height="515"
-            srcset="img/main-bg-picture-2x.png 2x">
+          <img src="./img/main-bg-picture.png" alt="Печатные платы" width="705" height="515"
+            srcset="./img/main-bg-picture-2x.png 2x">
         </picture>
       </div>
     </section>
 
-    <div class="page__inner-wrapper">
+    <div class="page-body__inner-wrapper">
       <section class="features container" id="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul>
           <li class="features__card">
-            <svg width="29" height="35"><use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use></svg>
+            <svg width="29" height="35"><use xlink:href="./img/sprite_auto.svg#icon-stopwatch"></use></svg>
             <h3>Оперативные сроки</h3>
             <p>
               Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
             </p>
           </li>
           <li class="features__card">
-            <svg width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-hired"></use></svg>
+            <svg width="35" height="35"><use xlink:href="./img/sprite_auto.svg#icon-hired"></use></svg>
             <h3>Крупные поставщики</h3>
             <p>
               Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,&ensp;HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
             </p>
           </li>
           <li class="features__card">
-            <svg width="36" height="31"><use xlink:href="img/sprite_auto.svg#icon-detective"></use></svg>
+            <svg width="36" height="31"><use xlink:href="./img/sprite_auto.svg#icon-detective"></use></svg>
             <h3>Полная&thinsp;конфиденциальность</h3>
             <p>
               По желанию клиента  мы обеспечиваем полную конфеденциальность.
             </p>
           </li>
           <li class="features__card">
-            <svg width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-tag"></use></svg>
+            <svg width="35" height="35"><use xlink:href="./img/sprite_auto.svg#icon-tag"></use></svg>
             <h3>Персонализация стоимости</h3>
             <p>
               Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
@@ -128,16 +128,16 @@
               <picture>
                 <!-- 1х: 290x256px; 2x: 580x512px -->
                 <source type="image/webp" media="(max-width:767px)"
-                  srcset="img/services-production-mobile.webp 1x, img/services-production-mobile-2x.webp 2x">
+                  srcset="./img/services-production-mobile.webp 1x, ./img/services-production-mobile-2x.webp 2x">
                 <!-- 1х: 723x264px; 2x: 1446x528px -->
                 <source type="image/webp" media="(max-width:1023px)"
-                  srcset="img/services-production-tablet.webp 1x, img/services-production-tablet-2x.webp 2x">
+                  srcset="./img/services-production-tablet.webp 1x, ./img/services-production-tablet-2x.webp 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
                 <source type="image/webp"
-                  srcset="img/services-production.webp 1x, img/services-production-2x.webp 2x">
+                  srcset="./img/services-production.webp 1x, ./img/services-production-2x.webp 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
-                <img src="img/services-production.jpg" width="370" height="620" alt="Производство плат"
-                  srcset="img/services-production-2x.jpg 2x">
+                <img src="./img/services-production.jpg" width="370" height="620" alt="Производство плат"
+                  srcset="./img/services-production-2x.jpg 2x">
               </picture>
             </a>
           </li>
@@ -147,16 +147,16 @@
               <picture>
                 <!-- 1х: 290x256px; 2x: 580x512px -->
                 <source type="image/webp" media="(max-width:767px)"
-                  srcset="img/servces-setup-mobile.webp 1x, img/servces-setup-mobile-2x.webp 2x">
+                  srcset="./img/servces-setup-mobile.webp 1x, ./img/servces-setup-mobile-2x.webp 2x">
                 <!-- 1х: 720x256px; 2x: 1440x512px -->
                 <source type="image/webp" media="(max-width:1023px)"
-                  srcset="img/servces-setup-tablet.webp 1x, img/servces-setup-tablet-2x.webp 2x">
+                  srcset="./img/servces-setup-tablet.webp 1x, ./img/servces-setup-tablet-2x.webp 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
                 <source type="image/webp"
-                  srcset="img/servces-setup.webp 1x, img/servces-setup-2x.webp 2x">
+                  srcset="./img/servces-setup.webp 1x, ./img/servces-setup-2x.webp 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
-                <img src="img/servces-setup.jpg" width="370" height="620" alt="Монтаж плат"
-                  srcset="img/servces-setup-2x.jpg 2x">
+                <img src="./img/servces-setup.jpg" width="370" height="620" alt="Монтаж плат"
+                  srcset="./img/servces-setup-2x.jpg 2x">
               </picture>
             </a>
           </li>
@@ -166,16 +166,16 @@
               <picture>
                 <!-- 1х: 290x256px; 2x: 580x512px -->
                 <source type="image/webp" media="(max-width:767px)"
-                  srcset="img/services-details-mobile.webp 1x, img/services-details-mobile-2x.webp 2x">
+                  srcset="./img/services-details-mobile.webp 1x, ./img/services-details-mobile-2x.webp 2x">
                 <!-- 1х: 723x264px; 2x: 1446x528px -->
                 <source type="image/webp" media="(max-width:1023px)"
-                  srcset="img/services-details-tablet.webp 1x, img/services-details-tablet-2x.webp 2x">
+                  srcset="./img/services-details-tablet.webp 1x, ./img/services-details-tablet-2x.webp 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
                 <source type="image/webp"
-                  srcset="img/services-details.webp 1x, img/services-details-2x.webp 2x">
+                  srcset="./img/services-details.webp 1x, ./img/services-details-2x.webp 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
-                <img src="img/services-details.jpg" width="370" height="620" alt="Комплектующие"
-                  srcset="img/services-details-2x.jpg 2x">
+                <img src="./img/services-details.jpg" width="370" height="620" alt="Комплектующие"
+                  srcset="./img/services-details-2x.jpg 2x">
               </picture>
             </a>
           </li>
@@ -190,15 +190,15 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="question-form__wrapper form__wrapper">
             <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
-            <input class="form__field" type="text" name="name" id="customer-name" placeholder="Имя" required>
+            <input type="text" name="name" id="customer-name" placeholder="Имя" required>
             <label class="visually-hidden" for="customer-phone">Укажите Ваш телефон</label>
-            <input class="form__field" type="tel" name="phone" id="customer-phone" pattern="[\+]{1}[7]{1}[\(][0-9]{3}[\)][0-9]{7}" placeholder="Телефон" required>
+            <input type="tel" name="phone" id="customer-phone" pattern="[\+]{1}[7]{1}[\(][0-9]{3}[\)][0-9]{7}" placeholder="Телефон" required>
             <label class="visually-hidden" for="customer-question">Задайте Ваш вопрос</label>
-            <textarea class="form__field" name="question" id="customer-question" placeholder="Ваш вопрос" rows="4" required></textarea>
-            <button class="form__btn btn btn--form" type="submit">Задать вопрос</button>
-            <p class="form__personal-data">
+            <textarea name="question" id="customer-question" placeholder="Ваш вопрос" rows="4" required></textarea>
+            <button class="btn btn--form" type="submit">Задать вопрос</button>
+            <p>
               <input type="checkbox" id="data-agreement" name="data-agreement" checked>
-              <label for="data-agreement">Я согласен на обработку персональных данных</label>
+              <label for="data-agreement" tabindex="0">Я согласен на обработку персональных данных</label>
             </p>
           </div>
         </form>
@@ -220,7 +220,7 @@
             <a href="#">
               <span class="visually-hidden">Facebook</span>
               <svg width="27" height="27">
-                <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                <use xlink:href="./img/sprite_auto.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -228,7 +228,7 @@
             <a href="#">
               <span class="visually-hidden">Одноклассники</span>
               <svg width="27" height="27">
-                <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+                <use xlink:href="./img/sprite_auto.svg#icon-ok"></use>
               </svg>
             </a>
           </li>
@@ -236,7 +236,7 @@
             <a href="#">
               <span class="visually-hidden">ВКонтакте</span>
               <svg width="27" height="27">
-                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                <use xlink:href="./img/sprite_auto.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -292,13 +292,13 @@
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="modal__inner-wrapper form__wrapper">
           <label class="visually-hidden" for="modal-name">Введите Ваше имя</label>
-          <input class="form__field" type="text" name="name" id="modal-name" placeholder="Имя" required>
+          <input type="text" name="name" id="modal-name" placeholder="Имя" required>
           <label class="visually-hidden" for="modal-phone">Укажите Ваш телефон</label>
-          <input class="form__field" type="tel" name="phone" id="modal-phone" pattern="[0-9]{10}" placeholder="Телефон" required>
+          <input type="tel" name="phone" id="modal-phone" pattern="[0-9]{10}" placeholder="Телефон" required>
           <label class="visually-hidden" for="modal-question">Задайте Ваш вопрос</label>
-          <textarea class="form__field" name="question" id="modal-question" placeholder="Ваш вопрос" rows="4" required></textarea>
+          <textarea name="question" id="modal-question" placeholder="Ваш вопрос" rows="4" required></textarea>
           <button class="form__btn btn btn--form" type="submit">Отправить</button>
-          <p class="form__personal-data">
+          <p>
             <input type="checkbox" id="modal-data-agreement" name="data-agreement" checked>
             <label for="modal-data-agreement">Я согласен на обработку персональных данных</label>
           </p>

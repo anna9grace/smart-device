@@ -1,5 +1,6 @@
 .promo {
   @include font-sizes(22px, 34px);
+  position: relative;
   padding: 7.2% 0 4% 0;
   color: $main-color-light;
   overflow: hidden;
@@ -43,7 +44,7 @@
   a:not(:last-of-type) {
     margin-left: 96px;
     margin-bottom: 23%;
-    padding: 17px 49px;
+    padding: 17px 45px;
     align-self: flex-start;
   }
 
@@ -117,7 +118,7 @@
     width: auto;
     height: 340px;
     left: 66%;
-    top: 12%;
+    top: 3.5%;
   }
 }
 
@@ -152,6 +153,5 @@
     height: auto;
     width: 92%;
     left: 7.9%;
-    top: 9.7%;
   }
 }

@@ -1,19 +1,16 @@
 .page {
   height: 100%;
+  overflow-x: hidden;
 }
 
-.page__body {
+.page body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: $background-color-dark url("../../img/bg-main.jpg") top center;
+  background: $background-color-dark url("../img/bg-main.jpg") top center;
 
   @media (min-resolution: 2dppx) {
-    background: $background-color-dark url("../../img/bg-main-2x.jpg") top center;
-  }
-
-  &--inactive {
-    overflow: hidden;
+    background: $background-color-dark url("../img/bg-main-2x.jpg") top center;
   }
 }
 
@@ -23,25 +20,4 @@
 
 .page footer {
   flex-shrink: 0;
-}
-
-.page__inner-wrapper {
-  background: $main-color-light url("../../img/bg-light.jpg") center center no-repeat;
-  background-size: cover;
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-
-@media (max-width: $max-tablet-width) {
-  .page__inner-wrapper {
-    padding-top: 54px;
-    padding-bottom: 83px;
-  }
-}
-
-@media (max-width: $max-mobile-width) {
-  .page__inner-wrapper {
-    padding-top: 37px;
-    padding-bottom: 66px;
-  }
 }
