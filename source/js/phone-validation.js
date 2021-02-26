@@ -5,7 +5,7 @@
   const PHONE_TEMPLATE_START = `+7(`;
   const PHONE_TEMPLATE_MIDDLE = `)`;
 
-  if (!phoneFields) {
+  if (phoneFields.length < 1) {
     return;
   }
 

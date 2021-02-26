@@ -2,9 +2,10 @@
 
 (function () {
   const accordionElements = document.querySelectorAll(`.page-footer__navigation, .page-footer__contacts`);
+  const accordionTogglers = document.querySelectorAll(`.page-footer__navigation h3, .page-footer__contacts h3`);
   const mobileScreen = window.matchMedia(`(max-width: 767px)`);
 
-  if (!accordionElements) {
+  if (accordionElements.length < 1 || accordionTogglers.length < 1) {
     return;
   }
 

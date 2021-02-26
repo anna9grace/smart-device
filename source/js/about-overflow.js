@@ -8,7 +8,7 @@
   let uncuttedText = null;
   let previousTextLength = 0;
 
-  if (!textElements) {
+  if (textElements.length < 1) {
     return;
   }
 

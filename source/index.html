@@ -192,7 +192,7 @@
             <label class="visually-hidden" for="customer-name">Введите Ваше имя</label>
             <input type="text" name="name" id="customer-name" placeholder="Имя" required>
             <label class="visually-hidden" for="customer-phone">Укажите Ваш телефон</label>
-            <input type="tel" name="phone" id="customer-phone" pattern="[\+]{1}[7]{1}[\(][0-9]{3}[\)][0-9]{7}" placeholder="Телефон" required>
+            <input type="tel" name="phone" id="customer-phone" pattern="[\+]{1}[7]{1}[\(]{0,1}[0-9]{3}[\)]{0,1}[0-9]{7}" placeholder="Телефон" required>
             <label class="visually-hidden" for="customer-question">Задайте Ваш вопрос</label>
             <textarea name="question" id="customer-question" placeholder="Ваш вопрос" rows="4" required></textarea>
             <button class="btn btn--form" type="submit">Задать вопрос</button>
@@ -294,7 +294,7 @@
           <label class="visually-hidden" for="modal-name">Введите Ваше имя</label>
           <input type="text" name="name" id="modal-name" placeholder="Имя" required>
           <label class="visually-hidden" for="modal-phone">Укажите Ваш телефон</label>
-          <input type="tel" name="phone" id="modal-phone" pattern="[0-9]{10}" placeholder="Телефон" required>
+          <input type="tel" name="phone" id="modal-phone" pattern="[\+]{1}[7]{1}[\(]{0,1}[0-9]{3}[\)]{0,1}[0-9]{7}" placeholder="Телефон" required>
           <label class="visually-hidden" for="modal-question">Задайте Ваш вопрос</label>
           <textarea name="question" id="modal-question" placeholder="Ваш вопрос" rows="4" required></textarea>
           <button class="form__btn btn btn--form" type="submit">Отправить</button>

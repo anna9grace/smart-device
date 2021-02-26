@@ -1,9 +1,16 @@
 .promo {
   @include font-sizes(22px, 34px);
   position: relative;
-  padding: 7.2% 0 4% 0;
+  margin-top: -128px;
+  padding: 13.8% 0 4% 0;
   color: $main-color-light;
   overflow: hidden;
+  background: $background-color-dark url("../img/bg-main.jpg") top center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background: $background-color-dark url("../img/bg-main-2x.jpg") top center;
+  }
 
   h1 {
     @include font-sizes(80px, 94px);
@@ -25,6 +32,7 @@
   flex-direction: column;
   width: 56%;
   min-width: 550px;
+  z-index: 1;
 
   p {
     position: relative;
@@ -72,13 +80,13 @@
   position: absolute;
   right: 9.3%;
   width: 36.5%;
-  z-index: -1;
 }
 
 @media (max-width: $max-tablet-width) {
   .promo {
     @include font-sizes(18px, 28px);
-    padding-top: 5.2%;
+    margin-top: -92px;
+    padding-top: 17.2%;
     padding-bottom: 8.2%;
 
     h1 {
@@ -118,7 +126,7 @@
     width: auto;
     height: 340px;
     left: 66%;
-    top: 3.5%;
+    top: 16.5%;
   }
 }
 
@@ -126,7 +134,8 @@
 @media (max-width: $max-mobile-width) {
   .promo {
     @include font-sizes(16px, 25px);
-    padding-top: 48.9%;
+    margin-top: -72px;
+    padding-top: 71.5%;
     padding-bottom: 13%;
 
     h1 {
@@ -153,5 +162,6 @@
     height: auto;
     width: 92%;
     left: 7.9%;
+    top: 14.2%;
   }
 }

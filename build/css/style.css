@@ -73,6 +73,9 @@ html {
   height: 100%;
   overflow-x: hidden; }
 
+.page--inactive {
+  overflow-y: hidden; }
+
 .page body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,9 +885,6 @@ html {
   .modal__wrapper {
     width: 100%;
     height: 100vh; } }
-
-.page-body--inactive {
-  overflow: hidden; }
 
 .page-body__inner-wrapper {
   padding-top: 110px;

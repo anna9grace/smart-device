@@ -9,11 +9,12 @@
   const nameField = form.querySelector(`#modal-name`);
   const phoneField = form.querySelector(`#modal-phone`);
   const questionField = form.querySelector(`#modal-question`);
+  const isAllFieldsExist = nameField && phoneField && questionField;
   let storageName = ``;
   let storagePhone = ``;
   let storageQuestion = ``;
 
-  if (!loginOpenBtn || !formModal) {
+  if (!loginOpenBtn || !formModal || !closeBtn || !form) {
     return;
   }
   try {
@@ -28,6 +29,10 @@
     formModal.classList.remove(`hidden`);
     document.addEventListener(`keydown`, escKeyPressHandler);
     page.classList.add(`page--inactive`);
+
+    if (!isAllFieldsExist) {
+      return;
+    }
     nameField.focus();
 
     if (storageName) {
@@ -75,7 +80,7 @@
   });
 
   form.addEventListener(`submit`, () => {
-    if (nameField.value && phoneField.value && questionField.value) {
+    if (isAllFieldsExist) {
       localStorage.setItem(`name`, nameField.value);
       localStorage.setItem(`phone`, phoneField.value);
       localStorage.setItem(`question`, questionField.value);

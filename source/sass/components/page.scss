@@ -11,11 +11,6 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: $background-color-dark url("../img/bg-main.jpg") top center;
-
-  @media (min-resolution: 2dppx) {
-    background: $background-color-dark url("../img/bg-main-2x.jpg") top center;
-  }
 }
 
 .page main {

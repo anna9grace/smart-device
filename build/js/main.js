@@ -8,7 +8,7 @@
   let uncuttedText = null;
   let previousTextLength = 0;
 
-  if (!textElements) {
+  if (textElements.length < 1) {
     return;
   }
 
@@ -52,9 +52,10 @@
 
 (function () {
   const accordionElements = document.querySelectorAll(`.page-footer__navigation, .page-footer__contacts`);
+  const accordionTogglers = document.querySelectorAll(`.page-footer__navigation h3, .page-footer__contacts h3`);
   const mobileScreen = window.matchMedia(`(max-width: 767px)`);
 
-  if (!accordionElements) {
+  if (accordionElements.length < 1 || accordionTogglers.length < 1) {
     return;
   }
 
@@ -112,11 +113,12 @@
   const nameField = form.querySelector(`#modal-name`);
   const phoneField = form.querySelector(`#modal-phone`);
   const questionField = form.querySelector(`#modal-question`);
+  const isAllFieldsExist = nameField && phoneField && questionField;
   let storageName = ``;
   let storagePhone = ``;
   let storageQuestion = ``;
 
-  if (!loginOpenBtn || !formModal) {
+  if (!loginOpenBtn || !formModal || !closeBtn || !form) {
     return;
   }
   try {
@@ -131,6 +133,10 @@
     formModal.classList.remove(`hidden`);
     document.addEventListener(`keydown`, escKeyPressHandler);
     page.classList.add(`page--inactive`);
+
+    if (!isAllFieldsExist) {
+      return;
+    }
     nameField.focus();
 
     if (storageName) {
@@ -178,7 +184,7 @@
   });
 
   form.addEventListener(`submit`, () => {
-    if (nameField.value && phoneField.value && questionField.value) {
+    if (isAllFieldsExist) {
       localStorage.setItem(`name`, nameField.value);
       localStorage.setItem(`phone`, phoneField.value);
       localStorage.setItem(`question`, questionField.value);
@@ -193,7 +199,7 @@
   const PHONE_TEMPLATE_START = `+7(`;
   const PHONE_TEMPLATE_MIDDLE = `)`;
 
-  if (!phoneFields) {
+  if (phoneFields.length < 1) {
     return;
   }
 
