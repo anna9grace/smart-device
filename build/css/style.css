@@ -773,8 +773,6 @@ html {
   .form__wrapper input {
     height: 50px;
     padding: 0 17px 5px 17px; }
-  .form__wrapper input[type="checkbox"] {
-    display: none; }
   .form__wrapper input[type="checkbox"] + label {
     font-size: 14px;
     line-height: 16px;
@@ -793,12 +791,12 @@ html {
       position: absolute;
       left: 0;
       border: 1px solid #ffffff; }
-    .form__wrapper input[type="checkbox"] + label:hover, .form__wrapper input[type="checkbox"] + label:focus {
-      outline: none; }
-      .form__wrapper input[type="checkbox"] + label:hover::before, .form__wrapper input[type="checkbox"] + label:focus::before {
-        background-color: rgba(255, 255, 255, 0.3); }
+    .form__wrapper input[type="checkbox"] + label:hover::before {
+      background-color: rgba(255, 255, 255, 0.3); }
     .form__wrapper input[type="checkbox"] + label:active::before {
       opacity: 0.7; }
+  .form__wrapper input[type="checkbox"]:focus + label::before {
+    background-color: rgba(255, 255, 255, 0.3); }
   .form__wrapper input[type="checkbox"]:checked + label::after {
     width: 7px;
     height: 5px;
