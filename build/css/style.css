@@ -709,7 +709,7 @@ html {
           flex-basis: 100%;
       margin-bottom: 31px; }
     .question-form__wrapper textarea {
-      min-height: auto;
+      min-height: 103px;
       margin-bottom: 32px; }
     .question-form__wrapper p {
       -ms-flex-preferred-size: 100%;
@@ -751,22 +751,27 @@ html {
     .form__wrapper input::-webkit-input-placeholder,
     .form__wrapper textarea::-webkit-input-placeholder {
       color: #ffffff;
+      font-size: 16px;
       opacity: 1; }
     .form__wrapper input::-moz-placeholder,
     .form__wrapper textarea::-moz-placeholder {
       color: #ffffff;
+      font-size: 16px;
       opacity: 1; }
     .form__wrapper input:-ms-input-placeholder,
     .form__wrapper textarea:-ms-input-placeholder {
       color: #ffffff;
+      font-size: 16px;
       opacity: 1; }
     .form__wrapper input::-ms-input-placeholder,
     .form__wrapper textarea::-ms-input-placeholder {
       color: #ffffff;
+      font-size: 16px;
       opacity: 1; }
     .form__wrapper input::placeholder,
     .form__wrapper textarea::placeholder {
       color: #ffffff;
+      font-size: 16px;
       opacity: 1; }
     .form__wrapper input:hover, .form__wrapper input:focus,
     .form__wrapper textarea:hover,
@@ -929,7 +934,7 @@ html {
 
 .page-footer {
   position: relative;
-  padding-top: 44px;
+  padding-top: 46px;
   background-color: #fafafa; }
 
 .page-footer__wrapper {

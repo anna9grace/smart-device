@@ -235,6 +235,14 @@ if (anchors.length > 0) {
       });
 
       field.addEventListener(`input`, (evt) => {
+        const userValue = evt.target.value;
+        const regexp = /[^+?^\(?\)?\d?]/;
+
+        if (userValue && userValue[userValue.length - 1].match(regexp)) {
+          evt.target.value = userValue.slice(0, userValue.length - 1);
+          field.reportValidity();
+        }
+
         if (evt.target.value.length === 5) {
           isPhoneBeingWritten = true;
         }
