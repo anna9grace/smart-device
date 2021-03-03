@@ -27,7 +27,7 @@
 
         if (userValue && userValue[userValue.length - 1].match(regexp)) {
           evt.target.value = userValue.slice(0, userValue.length - 1);
-          field.reportValidity();
+          // field.reportValidity();
         }
 
         if (evt.target.value.length === 5) {
