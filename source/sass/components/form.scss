@@ -28,6 +28,7 @@
     color: inherit;
     background-color: transparentize($main-color-light, 0.9);
     border: none;
+    border-radius: 0;
 
     &::placeholder {
       color: $main-color-light;

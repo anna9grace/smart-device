@@ -15,7 +15,7 @@
   top: 50%;
   width: 490px;
   margin: 0 auto 0 auto;
-  padding: 18px 39px 36px 39px;
+  padding: 36px 39px;
   transform: translateY(-50%);
   background-color: $accent-color;
 
@@ -31,10 +31,12 @@
 }
 
 .modal__wrapper > button {
-  @include sizes(22px, 22px);
-  position: relative;
+  @include sizes(42px, 42px);
+  position: absolute;
+  right: 9px;
+  top: 7px;
   margin-left: auto;
-  margin-right: -21px;
+  padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -46,6 +48,8 @@
     position: absolute;
     background-color: $main-color-light;
     left: 0;
+    right: 0;
+    margin: auto;
   }
 
   &::before {
