@@ -24,10 +24,12 @@
 }
 
 .products__card {
-  flex-basis: 30.5%;
+  width: 19.1vw;
   height: 32.3vw;
-  margin-right: 2.8%;
+  min-width: 251px;
+  min-height: 425px;
   margin-bottom: 46px;
+  margin-right: 2.8%;
   overflow: hidden;
 
   a {
@@ -115,8 +117,9 @@
   }
 
   .products__card {
-    flex-basis: auto;
     height: 33.3vw;
+    width: 100%;
+    min-height: auto;
     margin-right: 0;
 
     a {
@@ -128,6 +131,8 @@
 
 @media (max-width: $max-mobile-width) {
   .products__wrapper {
+    padding-bottom: 35px;
+
     h2 {
       @include font-sizes(28px, 39px);
       margin-left: 10px;
@@ -136,7 +141,7 @@
   }
 
   .products__card {
-    height: 80vw;
+    height: 255px;
     margin-bottom: 30px;
 
     a {
